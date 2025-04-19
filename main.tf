@@ -6,8 +6,7 @@ resource "aws_instance" "portfolio_instance" {
   ami           = "ami-0c02fb55956c7d316" # Amazon Linux 2 AMI
   instance_type = "t2.micro"
 
-  key_name = "" # 
-
+key_name = "portfolio-key" 
   user_data = <<-EOF
               #!/bin/bash
               sudo yum update -y
